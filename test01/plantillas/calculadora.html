@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> s</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       <!-- <form action="/hacerCalculo/" method="get" name="frmCalcula"> --> 
+        
+        <form action="/hacerCalculoP/" method="post" name="frmCalcula">
+            {% csrf_token %}
+            <input type="number" id="num1" name="num1" /><br><br>
+            <input type="number" id="num2" name="num2" /><br><br>
+            <input type="radio"  id="rbtSumar"       name="opera" value="S" />Sumar
+            <input type="radio"  id="rbtRestar"      name="opera" value="R" />Restar
+            <input type="radio"  id="rbtMultiplicar" name="opera" value="M" />Multiplicar
+            <input type="radio"  id="rbtDividir"     name="opera" value="D" />Dividir<br><br>
+            <input type="submit" value="Calcular" id="btnCalcula" />
+        </form>
+    </body>
+</html>

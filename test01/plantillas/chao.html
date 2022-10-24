@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chao</title>
+</head>
+
+<body>
+    <h1>SESION FINALIZADA A LAS {{Fecha}}</h1>
+    <p>Adios {{nombre}} {{apellido}} </p>
+    <ul>
+        {% for t in temas %}
+        <li>{{t}}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
+
+
+<form action="/hacerCalculoP/" method="post" name="frmCalcula">
+    {% csrf_token %}

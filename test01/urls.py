@@ -16,11 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from test01.views import gracias, saludo, buenas
+from test01.views import calculoGet, calcular, calculoPost
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', saludo),
-    path('saludo2/<texto>', buenas),
-    path('gracias/<int:cantidad>', gracias)
-]
+    # path('saludo/', saludo),
+    # path('saludo2/<texto>', buenas),
+    # path('gracias/<int:cantidad>', gracias),
+    # path('adios/', adios),
+    path('calcular/', calcular),
+    path('hacerCalculo/', calculoGet),
+    path('hacerCalculoP/', calculoPost)
+    ]
